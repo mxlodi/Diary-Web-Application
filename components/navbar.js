@@ -3,7 +3,7 @@ const navbar = ()=> {
     return `
     <nav>
         <div class="logo">
-            <a href="../index.html"><img src="../assets/icons/Smash It.svg" alt="Logo"></a>
+            <a href="../index.html"><img src="../assets/icons/smashit.svg" alt="Logo"></a>
         </div>
         <div class="right-info">
             <ul>

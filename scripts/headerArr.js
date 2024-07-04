@@ -9,15 +9,15 @@ const headerArr =
         'create':{
             title: 'The Essential To-Do List for a Busy Life.',
             subTitle: 'Keep track of your daily thoughts',
-            img: '../assets/images/dog pic.png'
+            img: '../assets/images/dogpic.png'
         },
         'edit':{
             title: 'Dairy Web Application',
-            img: '../assets/images/dog pic.png'
+            img: '../assets/images/dogpic.png'
         },
         'delete':{
             title: 'Dairy Diary',
-            img: '../assets/images/dog pic.png'
+            img: '../assets/images/dogpic.png'
         }
     }
 // export headerArr to use in other files

@@ -14,7 +14,7 @@ const footer = ()=>{
             </div>
             <!-- reserved and logo -->
             <div class="reserved">
-                <a href="../index.html"><img src="../assets/icons/Smash It.svg" alt="Logo"></a>
+                <a href="../index.html"><img src="../assets/icons/smashit.svg" alt="Logo"></a>
                 <p>© SMASH IT All Rights Reserved.</p>
             </div>
         </div>

@@ -8,7 +8,7 @@ import { headerArr } from "./headerArr.js";
 createHeader(headerArr.home);
 
 // get data from local storage
-const diaryArr = JSON.parse(localStorage.getItem("dairyArr"));
+const diaryArr = JSON.parse(localStorage.getItem("dairyArr")) || [];
 // function to display card
 const displayCard = () => {
   const cardContainer = document.querySelector(".card-container");
@@ -30,13 +30,15 @@ displayCard();
 const displayHeader = () => {
 
   const cardHeader = document.querySelector(".card-header");
-  const diaryArr = JSON.parse(localStorage.getItem("dairyArr"));
-
+  const diaryArr = JSON.parse(localStorage.getItem("dairyArr")) || [];
+  
   // map through the array to find the length
   const cardLength = diaryArr.length;
   // map over the array in the card-container
   const newHeader = document.createElement("h1");
   
+  
+
   if (cardLength == 1) {
     // return 1 for the length of the array
     // create new h1 element in the html

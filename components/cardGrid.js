@@ -18,10 +18,10 @@ const gridCard = (index,title,content,date)=>{
                     <!-- button -->
                     <div class="button">
                         <a href="./pages/edit.html?${index}">
-                            <img src="./assets/icons/edit button.svg" alt="edit button">
+                            <img src="./assets/icons/editbutton.svg" alt="edit button">
                         </a>
                         <a href="./pages/view-delete.html?${index}">
-                            <img src="./assets/icons/delete button.svg" alt="delete button">
+                            <img src="./assets/icons/deletebutton.svg" alt="delete button">
                         </a>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ class EditCard extends HTMLElement{
         let location = window.location.href.split('?');
         const index = location[1];
         // get data from local storage
-        let entries = JSON.parse(localStorage.getItem('dairyArr'));
+        let entries = JSON.parse(localStorage.getItem('dairyArr')) || [];
         // get the title, description, date with the entries index
         let entry = entries[index];
 
@@ -45,7 +45,7 @@ class EditCard extends HTMLElement{
             // get the title, description, date with the entries index
             entries[index] = {title,description,date};
             // set local storage
-            localStorage.setItem('dairyArr', JSON.stringify(entries));
+            localStorage.setItem('dairyArr', JSON.stringify(entries)) || [];
             window.location.href = '../index.html';
         });
         // cancel button 

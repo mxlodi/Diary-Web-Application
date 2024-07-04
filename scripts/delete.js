@@ -27,7 +27,7 @@ class DeleteCard extends HTMLElement{
         // get index from url
         const index = window.location.href.split('?')[1];
         // fetching entries from local storage
-        let entries = JSON.parse(localStorage.getItem('dairyArr'));
+        let entries = JSON.parse(localStorage.getItem('dairyArr')) || [];
         // call id to use 
         const description = document.querySelector('#description');
         const title = document.querySelector('#title');
@@ -50,7 +50,7 @@ class DeleteCard extends HTMLElement{
                 return n!= index;
             })
             // when the delete button is clicked, the entry at the index is removed from the array in local storage
-            localStorage.setItem('dairyArr', JSON.stringify(entries));
+            localStorage.setItem('dairyArr', JSON.stringify(entries)) || [];
             window.location.href = '../index.html';
         })
         // cancel button 
@@ -62,7 +62,7 @@ class DeleteCard extends HTMLElement{
             const date = document.querySelector('#date').value;
             // access the diary entry at the specified index
             entries[index] = {title,description,date};
-            localStorage.setItem('dairyArr', JSON.stringify(entries));
+            localStorage.setItem('dairyArr', JSON.stringify(entries)) || [];
             window.location.href = '../index.html';
         })
     }

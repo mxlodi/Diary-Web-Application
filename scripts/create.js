@@ -40,7 +40,7 @@ class CreateCard extends HTMLElement {
             entries.push({ title, description, date });
             // storing updated data in local storage
             // if the key already exists, it updates the value; if it does not, it creates a new key-value pair
-            localStorage.setItem('dairyArr', JSON.stringify(entries));
+            localStorage.setItem('dairyArr', JSON.stringify(entries)) || [];
             formCreate.reset();
             window.location.href = '../index.html';
         });
