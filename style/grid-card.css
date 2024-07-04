@@ -1,0 +1,114 @@
+/* display box container styling */
+.container {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: var(--border-medium-radius);
+    border: 1px solid black;
+    box-shadow: 0 8px 6px -6px black;
+    max-width: 170px;
+    height: auto;
+    overflow: hidden; 
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+}
+/* hovering styling for display box */
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 10px -6px var(--dark-gray-color);
+}
+/* card styling */
+.card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 18px;
+    column-gap : 36px;
+    padding :10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* title styling */
+.diary-entry h2 {
+    max-width: 100%;
+    text-align: start;
+    font-size: 10px;
+    font-family: var(--font-ubuntu);
+    color: black;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+/* styling for the heading of description and date */
+.card-content label {
+    display: block;
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 10px;
+    font-family: var(--font-ubuntu);
+    color: black;
+}
+
+/* description text styling */
+.card-description {
+    width: 100%;
+    padding: 5px;
+    border-radius: var(--border-medium-radius);
+    border: 1px solid black;
+    font-family: var(--font-share-tech);
+    resize: none;
+    height: 80px;
+    background-color: white; 
+    /* white-space: nowrap;  */
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+/* date text styling */
+.card-date {
+    width: 100%;
+    padding: 5px;
+    border-radius: var(--border-medium-radius);
+    border: 1px solid black;
+    font-family: var(--font-share-tech);
+    box-shadow: 0 8px 6px -6px var(--dark-gray-color);
+}
+/* button styling */
+.button {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 8px;
+}
+/* responsive for screen 428px */
+@media (min-width: 428px) {
+    .container {
+        max-width: 350px;
+    }
+    .diary-entry h2 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    .card-content label {
+        padding-top: 15px;
+        font-size: 15px;
+    }
+    .buttons {
+        gap: 21px;
+        padding-top: 15px;
+    }
+}
+/* responsive for screen 768px */
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 60px;
+        column-gap: 80px;
+    }
+    .container {
+        max-width: 420px;
+    }
+}

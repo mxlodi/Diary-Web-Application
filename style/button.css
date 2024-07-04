@@ -1,0 +1,10 @@
+/* button styling */
+.btn {
+    background-color: white;
+    border-radius: var(--border-medium-radius);
+    border:none;
+    border : 2px solid white;
+    padding : 3px 17px; 
+    font-size : 10px;
+    font-family: var(--font-ubuntu); 
+}

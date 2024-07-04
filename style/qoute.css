@@ -1,0 +1,137 @@
+/* quote container box styling*/
+.qoute-content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 20px, 0;
+    box-shadow: 0.5rem 0.5rem var(--dark-gray-color);
+    border-radius: var(--border-large-radius);
+    border: 1px solid black;
+}
+
+/* hidden in small screen */
+.qoute-pic {
+    position: absolute; 
+    display: none;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* quote img styling */
+.qoute-pic img {
+    max-width: 60px;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: -0.5rem -0.5rem var(--dark-gray-color);
+    border-radius: var(--border-large-radius);
+}
+
+/* quote text container styling */
+.qoute-text {
+    background-color: var(--white-50-color);
+    padding-right: 100px;
+    border-radius: var(--border-large-radius);
+    width: 100%;
+    padding: 10px;
+    text-wrap: wrap;
+}
+
+/* content in quote text styling */
+.qoute-text div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+/* quote header styling */
+.qoute-text div h1 {
+    font-family: var(--font-ubuntu);
+    font-size: 10px;
+}
+
+/* image inside quote text styling */
+.qoute-text div img {
+    max-width: 35px;
+    border-radius: var(--border-large-radius);
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* hover animation */
+.qoute-text div img:hover, 
+.qoute-pic img:hover {
+    transform: scale(1.1);
+}
+
+/* responsive for screen 428px */
+@media (min-width: 428px) {
+    .qoute-pic {
+        display: none;
+    }
+    .qoute-pic img {
+        max-width: 160px;
+    }
+
+    .qoute-text div img {
+        max-width: 140px;
+        
+    }
+
+    .qoute-content {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .qoute-text div {
+        justify-content: center;
+    }
+
+    .qoute-text div h1 {
+        font-size: 14px;
+    }
+}
+/* responsive for screen 768px */
+@media (min-width: 768px) {
+    .qoute-pic {
+        display: none;
+    }
+    .qoute-pic img {
+        max-width: 200px;
+    }
+
+    .qoute-text div img {
+        max-width: 160px;
+    }
+    .qoute-content {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .qoute-text div {
+        justify-content: end;
+        gap: 55px;
+    }
+
+    .qoute-text div h1 {
+        font-size: 18px;
+    }
+}
+/* add screen 1080px responsive for more visualization of the website */
+@media (min-width: 905px) {
+    .qoute-pic {
+        display: block;
+    }
+}
+
+/* keyframes for image appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

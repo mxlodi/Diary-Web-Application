@@ -1,0 +1,105 @@
+/* sub header box styling */
+.sub-header {
+    background-color: var(--gray-color);
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: var(--border-medium-radius);
+    box-shadow: 0 8px 6px -6px var(--dark-gray-color);
+    font-family : var(--font-ubuntu);
+}
+/* content in sub header styling */
+.sub-header-content {
+    display :flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+/* text styling */
+.sub-header-content h1 {
+    font-size : 12px;
+}
+/* arrow icon */
+.sub-header-content a {
+    display:flex;
+}
+
+
+/* card header styling */
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap : 40px;
+    padding: 26px;
+    margin-top: 30px; 
+    transition-duration:500ms;
+}
+.card-header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    font-family: var(--font-ubuntu);
+    font-size: 12px;
+    border: 1px dotted black;
+    box-shadow: 0.5rem 0.5rem #363636;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-header h1:hover {
+    transform: translateX(10px);
+    opacity: 0.8;
+}
+
+.card-header a {
+    display: inline-block;
+    padding: 5px 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+    border: 2px solid var(--stroke-light-gray);
+    height: auto;
+    box-shadow: -0.5rem -0.5rem var(--dark-gray-color); 
+    border-radius: var(--border-small-radius)
+}
+
+.card-header a:hover {
+    transform: scale(1.05); 
+    box-shadow: 0.5rem 0.5rem #363636;
+}
+
+/* responsive for screen 428px */
+@media (min-width: 428px) {
+    .sub-header-content h1 {
+        font-size : 18px;
+    }
+    .sub-header-content {
+        padding: 20px;    
+    }
+    .card-header h1 {
+        font-size : 16px;
+    }
+    .card-header a{
+        padding: 10px 10px;
+    }
+}
+/* responsive for screen 768px */
+@media (min-width: 768px) {
+    .sub-header-content h1 {
+        font-size : 22px;
+   }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

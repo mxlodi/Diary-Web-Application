@@ -1,0 +1,112 @@
+/* footer */
+.footer{
+    background-color: var(--gray-color);
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: var(--border-large-radius);
+    box-shadow: 0 8px 6px -6px var(--dark-gray-color);
+}
+/* footer content */
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+/* contact us */
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap :1px;
+}
+/* contact us text */
+.contact-us h1{
+    font-family: var(--font-ubuntu);
+    font-size : 10px;
+}
+.contact-us h1 div {
+    max-width : 10px;
+    width: 100%;
+}
+/* right side section */
+.reserved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    font-size : 8px;
+    gap: 3px;
+    
+}
+/* logo in footer styling */
+.reserved a img{
+    max-width : 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* reserved text */
+.reserved p{
+    font-family: var(--font-ubuntu);
+    display:flex;
+    font-size : 8px;
+    align-items: center;
+    justify-content: end;
+}
+/* responsive for screen 428px */
+@media (min-width: 428px) {
+    .contact-us{
+        gap :10px;
+    }
+    .contact-us h1{
+        font-size : 18px;
+    }
+    .contact-us h1 div {
+        max-width : 18px;
+        width: 100%;
+    }
+    .reserved {
+        font-size : 10px;
+        gap: 12px;
+        
+    }
+    .reserved a img{
+        max-width : 140px;
+        width: 100%;
+        
+    }
+    .reserved p{
+        font-size : 12px;
+    }
+}
+/* responsive for screen 768px */
+@media (min-width: 768px) {
+    .contact-us{
+        gap :16px;
+    }
+    .contact-us h1{
+        font-size : 22px;
+    }
+    .contact-us h1 div {
+        max-width : 24px;
+        width: 100%;
+    }
+    .reserved {
+        font-size : 10px;
+        gap: 14px;
+        
+    }
+    .reserved a img{
+        max-width : 160px;
+        width: 100%;
+        
+    }
+    .reserved p{
+        font-size : 16px;
+    }
+}

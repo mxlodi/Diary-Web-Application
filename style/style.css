@@ -1,0 +1,65 @@
+/* import other css styles */
+@import url("./nav.css");
+@import url('./qoute.css');
+@import url('./header.css');
+@import url('./grid-card.css');
+@import url('./card.css');
+@import url('./footer.css');
+@import url('./button.css');
+@import url('./sub-header.css');
+
+/* universal selector in css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body styling*/
+body {
+    max-width: 1536px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+/* styling root that was set as variables */
+:root {
+    --font-ubuntu: "Ubuntu", sans-serif;
+    --font-share-tech: "Share Tech", sans-serif;
+    --font-open-sans-semibold: "Open Sans", sans-serif;
+    --background-color: white;
+    --text-color: black;
+    --white-50-color: #F4F4F4;
+    --gray-color: #EFEEED;
+    --dark-gray-color: #BDBDBD;
+    --light-gray-color: #DEDEDE;
+    --white-color: white;
+    --stroke-light-gray : #797979;
+    --border-small-radius: 4px;
+    --border-medium-radius: 10.21px;
+    --border-large-radius: 15px;
+    --border-style : 4px solid var(--dark-gray-color);
+    --text-gray-hover : #7f7f7f;
+    --padding : 1rem 2rem;
+}
+
+
+ /* fonts styling */
+ .open-sans-semibold {
+    font-family: var(--font-open-sans-semibold);
+    font-weight: 500;
+    font-style: normal;
+}
+.share-tech {
+    font-family: var(--font-share-tech);
+    font-weight: 400;
+    font-style: normal;
+}
+.ubuntu-medium {
+    font-family: var(--font-ubuntu);
+    font-weight: 500;
+    font-style: normal;
+}

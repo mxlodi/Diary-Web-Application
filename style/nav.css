@@ -1,0 +1,57 @@
+
+/* navbar styling */
+nav {
+    background: white;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 30px, 0;
+}
+
+/* logo styling */
+.logo img {
+    max-width:60px;
+    height: auto;
+}
+
+/* join now and help text styling */
+.right-info ul{
+    display: flex;
+    list-style: none;
+    text-wrap : nowrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    font-family: var(--font-ubuntu);
+    font-size: 8px;
+}
+
+/* hovering effect */
+.right-info ul :hover {
+    border-radius: 4px;
+    color: var(--text-gray-hover);
+    cursor: pointer;
+
+}
+
+/* responsive for screen 428px */
+@media (min-width: 428px) {
+    .logo img {
+        max-width:80px;
+    }
+    .right-info ul{
+        font-size:10px;
+    }
+}
+/* responsive for screen 768px */
+@media (min-width: 768px) {
+    .logo img {
+        max-width:120px;
+    }
+    .right-info ul{
+        font-size:16px;
+    }
+}

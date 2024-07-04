@@ -1,0 +1,61 @@
+
+/* header styling*/
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: var(--font-ubuntu);
+    gap: 32px;
+    margin-top : 10px;
+    margin-bottom : 20px;
+}
+
+/* title styling*/
+.title {
+    font-family: var(--font-ubuntu);
+    letter-spacing: 3px;
+    font-size : 16px;
+    
+}
+/* sub title styling*/
+.sub-title {
+    letter-spacing: -0.3px;
+    font-size: 10px;
+    font-family: var(--font-share-tech)
+}
+/* profile picture styling */
+.profile-pic img {
+    max-width: 120px;
+    width:100% ;
+    border-radius: var(--border-large-radius);
+    border: 2px solid var(--stroke-light-gray);
+    height: auto;
+    box-shadow: 0.5rem 0.5rem var(--dark-gray-color);
+    transition-duration:500ms;
+}
+/* responsive for screen 428px */
+@media (min-width: 428px)   {        
+    .profile-pic img {
+        max-width: 300px;
+    }
+    .title{
+        font-size : 24px;
+    }
+    .sub-title{
+        font-size : 14px;
+    }
+}
+
+/* responsive for screen 768px */
+@media (min-width: 768px)   {
+    .profile-pic img {
+        max-width: 400px;
+    }
+    .title{
+        font-size : 36px;
+    }
+    .sub-title{
+        font-size : 24px;
+    }
+}
