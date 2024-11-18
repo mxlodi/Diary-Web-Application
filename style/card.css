@@ -1,145 +1,183 @@
 /* container box */
 .create-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:30px, 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px, 0;
 }
 
-
 /* form container */
-.form-container {    
-    max-width: 300px;
-    width: 100%;
-    transition-duration:300ms;
-    background-color: var(--gray-color);
-    padding: 10px;
-    border-radius: var(--border-medium-radius);
-    border: 1px solid var(--stroke-light-gray);
-    box-shadow: 0.5rem 0.5rem var(--dark-gray-color);
-    box-sizing: border-box;
+.form-container {
+  max-width: 300px;
+  width: 100%;
+  transition-duration: 300ms;
+  background-color: var(--gray-color);
+  padding: 8px;
+  border-radius: var(--border-medium-radius);
+  border: 1px solid var(--stroke-light-gray);
+  box-shadow: 0.5rem 0.5rem var(--dark-gray-color);
+  box-sizing: border-box;
 }
 
 /* title styling */
 .title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    resize:vertical;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  resize: vertical;
 }
 
 /* title text styling */
 .title h1 {
-    font-family: var(--font-ubuntu);
-    font-size: 12px;
-    word-wrap: break-word; 
-    overflow-wrap: wrap;
- 
+  font-family: var(--font-ubuntu);
+  font-size: 14px;
+  word-wrap: break-word;
+  overflow-wrap: wrap;
 }
 
 /* content area styling */
 .form-content {
-    font-family: var(--font-ubuntu);
-    font-size: 10px;
-    padding-top: 5px;
+  font-family: var(--font-ubuntu);
+  font-size: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 /* reset textarea default styles */
 textarea {
-    margin: 0; 
-    padding: 0;  
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* apply specific styles to form-description and title-input */
-.form-description, .title-input {
-    white-space: normal; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    display: block;
-    width: 100%; 
-    padding: 5px;
-    border-radius: var(--border-medium-radius);
-    border: 1px solid black;
-    margin: 0;
-    font-family: var(--font-share-tech);
-    box-sizing: border-box;
-    resize: vertical;
-    background-color: white;
-    overflow-y : scroll;
+.form-description,
+.title-input {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--border-medium-radius);
+  border: 1px solid black;
+  margin: 0;
+  font-family: var(--font-share-tech);
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: white;
+  overflow-y: scroll;
+}
+.title-input,
+.form-description,
+.form-date {
+  width: 100%;
+  font-size: 16px;
 }
 /* date input styling */
 .form-date {
-    padding : 5px;
-    width: 100%;
-    border-radius: var(--border-medium-radius);
-    border: 1px solid black;
-    box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  border-radius: var(--border-medium-radius);
+  border: 1px solid black;
+  box-sizing: border-box;
 }
 
 /* label styling */
-.form-label, .date-label {
-    display: block;
-    font-weight: bold;
-    font-size: 10px;
-    padding-bottom: 10px;
-    font-family: var(--font-ubuntu);
-    color: black;
+.form-label,
+.date-label {
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-family: var(--font-ubuntu);
+  color: black;
 }
 /* date box styling */
 label.date-label {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 /* button container styling */
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 12px;
+}
+.button img {
+  width: 30px;
+  height: 30px;
+}
+/* responsive for screen 428px */
+@media (min-width: 428px) {
+  .form-container {
+    max-width: 440px;
+  }
+  .title h1 {
+    font-size: 18px;
+  }
+  .form-content {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .date-label {
+    padding-bottom: 12px;
+  }
+  .button img {
+    width: 36px;
+    height: 36px;
+  }
+  .button {
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 10px;
-    padding-top: 10px;
+    gap: 4px;
     font-size: 12px;
-}
-
-/* responsive for screen 428px */
-@media(min-width: 428px) {
-    .form-container {
-        max-width: 440px;
-    }
-    .title h1 {
-        font-size: 18px;
-    }
-    .form-content {
-        padding-top: 12px;
-        font-size: 12px;
-    }
-    .date-label {
-        padding-bottom: 12px;
-    }
-    .button {
-        padding-top: 12px;
-    }
+  }
+  .title-input,
+  .form-description,
+  .form-date {
+    width: 100%;
+    font-size: 16px;
+    spacing: 1.5;
+  }
 }
 
 /* responsive for screen 768px */
-@media(min-width: 768px) {
-    .form-container {
-        max-width: 666px;
-    }
-    .title h1 {
-        font-size: 22px;
-    }
-    .form-content {
-        padding-top: 14px;
-        font-size: 15px;
-    }
-    .date-label, .form-label {
-        padding-bottom: 14px;
-        font-size: 15px;
-    }
-    .button {
-        padding-top: 14px;
-        font-size: 15px;
-    }
+@media (min-width: 768px) {
+  .form-container {
+    max-width: 666px;
+  }
+  .title h1 {
+    font-size: 22px;
+  }
+  .form-content {
+    padding-top: 14px;
+    font-size: 15px;
+  }
+  .date-label,
+  .form-label {
+    padding-bottom: 14px;
+    font-size: 15px;
+  }
+  .button img {
+    width: 40px;
+    height: 40px;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 4px;
+    font-size: 12px;
+  }
+  .title-input,
+  .form-description,
+  .form-date {
+    width: 100%;
+    font-size: 18px;
+  }
 }

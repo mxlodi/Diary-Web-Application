@@ -5,7 +5,7 @@
     align-items: center;
     max-width: 100%;
     width: 100%;
-    margin: 20px, 0;
+    margin: 10px, 0;
     box-shadow: 0.5rem 0.5rem var(--dark-gray-color);
     border-radius: var(--border-large-radius);
     border: 1px solid black;
@@ -33,7 +33,7 @@
     padding-right: 100px;
     border-radius: var(--border-large-radius);
     width: 100%;
-    padding: 10px;
+    padding: 4px;
     text-wrap: wrap;
 }
 
@@ -73,10 +73,10 @@
     }
     .qoute-pic img {
         max-width: 160px;
+        background-color:white;
     }
-
     .qoute-text div img {
-        max-width: 140px;
+        max-width: 75px;
         
     }
 
@@ -100,10 +100,11 @@
     }
     .qoute-pic img {
         max-width: 200px;
+        background-color:white;
     }
 
     .qoute-text div img {
-        max-width: 160px;
+        max-width: 80px;
     }
     .qoute-content {
         margin-top: 60px;

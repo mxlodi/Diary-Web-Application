@@ -43,7 +43,7 @@ class DeleteCard extends HTMLElement{
         // access the property of the entry object, which is the text that was originally entered for this diary entry
         const cancelBtn = document.querySelector('#clearBtn');
         const deleteBtn = document.querySelector('#saveBtn');
-        // delete button 
+        // delete  
         deleteBtn.addEventListener('click', (e)=>{
             e.preventDefault();
             entries = entries.filter((_,n)=>{
